@@ -1,0 +1,182 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="SIGDataSet" targetNamespace="http://tempuri.org/SIGDataSet.xsd" xmlns:mstns="http://tempuri.org/SIGDataSet.xsd" xmlns="http://tempuri.org/SIGDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="SIGConnectionString" ConnectionStringObject="" IsAppSettingsProperty="True" Modifier="Assembly" Name="SIGConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.IntelliTrack.Client.Application.Properties.Settings.GlobalReference.Default.SIGConnectionString" Provider="System.Data.SqlClient">
+          </Connection>
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="RegadoresViewTableAdapter" GeneratorDataComponentClassName="RegadoresViewTableAdapter" Name="RegadoresView" UserDataComponentName="RegadoresViewTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="SIGConnectionString (Settings)" DbObjectName="SIG.dbo.RegadoresView" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="False" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="True" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="False">
+                    <CommandText>SELECT ID, IDTransponder, IDElemento, Categoria, Equipo, DIA_HORA, DIA_HORA_Final, Duracion, Latitud, Longitud, Velocidad, Curso, NOM_PUNTO, NOM_CAMINO, NOM_AREA, NOM_FRENTE, TAG_EQUIPO, TRANSP_VOLT, TRANSP_TEMP, SENTIDO, TiempoCarga, TiempoDetenido, TiempoTransito, Estado, VelocidadMaxima, VelocidadPromedio, ReferenciaSalida, ReferenciaCaminos, ReferenciaLlegada FROM dbo.RegadoresView</CommandText>
+                    <Parameters>
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="ID" DataSetColumn="ID" />
+              <Mapping SourceColumn="IDTransponder" DataSetColumn="IDTransponder" />
+              <Mapping SourceColumn="IDElemento" DataSetColumn="IDElemento" />
+              <Mapping SourceColumn="Categoria" DataSetColumn="Categoria" />
+              <Mapping SourceColumn="Equipo" DataSetColumn="Equipo" />
+              <Mapping SourceColumn="DIA_HORA" DataSetColumn="DIA_HORA" />
+              <Mapping SourceColumn="DIA_HORA_Final" DataSetColumn="DIA_HORA_Final" />
+              <Mapping SourceColumn="Duracion" DataSetColumn="Duracion" />
+              <Mapping SourceColumn="Latitud" DataSetColumn="Latitud" />
+              <Mapping SourceColumn="Longitud" DataSetColumn="Longitud" />
+              <Mapping SourceColumn="Velocidad" DataSetColumn="Velocidad" />
+              <Mapping SourceColumn="Curso" DataSetColumn="Curso" />
+              <Mapping SourceColumn="NOM_PUNTO" DataSetColumn="NOM_PUNTO" />
+              <Mapping SourceColumn="NOM_CAMINO" DataSetColumn="NOM_CAMINO" />
+              <Mapping SourceColumn="NOM_AREA" DataSetColumn="NOM_AREA" />
+              <Mapping SourceColumn="NOM_FRENTE" DataSetColumn="NOM_FRENTE" />
+              <Mapping SourceColumn="TAG_EQUIPO" DataSetColumn="TAG_EQUIPO" />
+              <Mapping SourceColumn="TRANSP_VOLT" DataSetColumn="TRANSP_VOLT" />
+              <Mapping SourceColumn="TRANSP_TEMP" DataSetColumn="TRANSP_TEMP" />
+              <Mapping SourceColumn="SENTIDO" DataSetColumn="SENTIDO" />
+              <Mapping SourceColumn="TiempoCarga" DataSetColumn="TiempoCarga" />
+              <Mapping SourceColumn="TiempoDetenido" DataSetColumn="TiempoDetenido" />
+              <Mapping SourceColumn="TiempoTransito" DataSetColumn="TiempoTransito" />
+              <Mapping SourceColumn="Estado" DataSetColumn="Estado" />
+              <Mapping SourceColumn="VelocidadMaxima" DataSetColumn="VelocidadMaxima" />
+              <Mapping SourceColumn="VelocidadPromedio" DataSetColumn="VelocidadPromedio" />
+              <Mapping SourceColumn="ReferenciaSalida" DataSetColumn="ReferenciaSalida" />
+              <Mapping SourceColumn="ReferenciaCaminos" DataSetColumn="ReferenciaCaminos" />
+              <Mapping SourceColumn="ReferenciaLlegada" DataSetColumn="ReferenciaLlegada" />
+            </Mappings>
+            <Sources>
+            </Sources>
+          </TableAdapter>
+        </Tables>
+        <Sources>
+        </Sources>
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="SIGDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="SIGDataSet" msprop:Generator_DataSetName="SIGDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="RegadoresView" msprop:Generator_UserTableName="RegadoresView" msprop:Generator_RowDeletedName="RegadoresViewRowDeleted" msprop:Generator_TableClassName="RegadoresViewDataTable" msprop:Generator_RowChangedName="RegadoresViewRowChanged" msprop:Generator_RowClassName="RegadoresViewRow" msprop:Generator_RowChangingName="RegadoresViewRowChanging" msprop:Generator_RowEvArgName="RegadoresViewRowChangeEvent" msprop:Generator_RowEvHandlerName="RegadoresViewRowChangeEventHandler" msprop:Generator_TablePropName="RegadoresView" msprop:Generator_TableVarName="tableRegadoresView" msprop:Generator_RowDeletingName="RegadoresViewRowDeleting">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ID" msdata:ReadOnly="true" msprop:Generator_UserColumnName="ID" msprop:Generator_ColumnPropNameInRow="ID" msprop:Generator_ColumnVarNameInTable="columnID" msprop:Generator_ColumnPropNameInTable="IDColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="IDTransponder" msdata:ReadOnly="true" msprop:Generator_UserColumnName="IDTransponder" msprop:Generator_ColumnPropNameInRow="IDTransponder" msprop:Generator_ColumnVarNameInTable="columnIDTransponder" msprop:Generator_ColumnPropNameInTable="IDTransponderColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="3" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="IDElemento" msdata:ReadOnly="true" msprop:Generator_UserColumnName="IDElemento" msprop:Generator_ColumnPropNameInRow="IDElemento" msprop:Generator_ColumnVarNameInTable="columnIDElemento" msprop:Generator_ColumnPropNameInTable="IDElementoColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="3" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Categoria" msdata:ReadOnly="true" msprop:Generator_UserColumnName="Categoria" msprop:Generator_ColumnPropNameInRow="Categoria" msprop:Generator_ColumnVarNameInTable="columnCategoria" msprop:Generator_ColumnPropNameInTable="CategoriaColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="Equipo" msdata:ReadOnly="true" msprop:Generator_UserColumnName="Equipo" msprop:Generator_ColumnPropNameInRow="Equipo" msprop:Generator_ColumnVarNameInTable="columnEquipo" msprop:Generator_ColumnPropNameInTable="EquipoColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="3" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DIA_HORA" msdata:ReadOnly="true" msprop:Generator_UserColumnName="DIA_HORA" msprop:Generator_ColumnPropNameInRow="DIA_HORA" msprop:Generator_ColumnVarNameInTable="columnDIA_HORA" msprop:Generator_ColumnPropNameInTable="DIA_HORAColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="DIA_HORA_Final" msdata:ReadOnly="true" msprop:Generator_UserColumnName="DIA_HORA_Final" msprop:Generator_ColumnPropNameInRow="DIA_HORA_Final" msprop:Generator_ColumnVarNameInTable="columnDIA_HORA_Final" msprop:Generator_ColumnPropNameInTable="DIA_HORA_FinalColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Duracion" msdata:ReadOnly="true" msprop:Generator_UserColumnName="Duracion" msprop:Generator_ColumnPropNameInRow="Duracion" msprop:Generator_ColumnVarNameInTable="columnDuracion" msprop:Generator_ColumnPropNameInTable="DuracionColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="Latitud" msdata:ReadOnly="true" msprop:Generator_UserColumnName="Latitud" msprop:Generator_ColumnPropNameInRow="Latitud" msprop:Generator_ColumnVarNameInTable="columnLatitud" msprop:Generator_ColumnPropNameInTable="LatitudColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Longitud" msdata:ReadOnly="true" msprop:Generator_UserColumnName="Longitud" msprop:Generator_ColumnPropNameInRow="Longitud" msprop:Generator_ColumnVarNameInTable="columnLongitud" msprop:Generator_ColumnPropNameInTable="LongitudColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Velocidad" msdata:ReadOnly="true" msprop:Generator_UserColumnName="Velocidad" msprop:Generator_ColumnPropNameInRow="Velocidad" msprop:Generator_ColumnVarNameInTable="columnVelocidad" msprop:Generator_ColumnPropNameInTable="VelocidadColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Curso" msdata:ReadOnly="true" msprop:Generator_UserColumnName="Curso" msprop:Generator_ColumnPropNameInRow="Curso" msprop:Generator_ColumnVarNameInTable="columnCurso" msprop:Generator_ColumnPropNameInTable="CursoColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="NOM_PUNTO" msdata:ReadOnly="true" msprop:Generator_UserColumnName="NOM_PUNTO" msprop:Generator_ColumnPropNameInRow="NOM_PUNTO" msprop:Generator_ColumnVarNameInTable="columnNOM_PUNTO" msprop:Generator_ColumnPropNameInTable="NOM_PUNTOColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="3" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="NOM_CAMINO" msdata:ReadOnly="true" msprop:Generator_UserColumnName="NOM_CAMINO" msprop:Generator_ColumnPropNameInRow="NOM_CAMINO" msprop:Generator_ColumnVarNameInTable="columnNOM_CAMINO" msprop:Generator_ColumnPropNameInTable="NOM_CAMINOColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="3" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="NOM_AREA" msdata:ReadOnly="true" msprop:Generator_UserColumnName="NOM_AREA" msprop:Generator_ColumnPropNameInRow="NOM_AREA" msprop:Generator_ColumnVarNameInTable="columnNOM_AREA" msprop:Generator_ColumnPropNameInTable="NOM_AREAColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="3" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="NOM_FRENTE" msdata:ReadOnly="true" msprop:Generator_UserColumnName="NOM_FRENTE" msprop:Generator_ColumnPropNameInRow="NOM_FRENTE" msprop:Generator_ColumnVarNameInTable="columnNOM_FRENTE" msprop:Generator_ColumnPropNameInTable="NOM_FRENTEColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="3" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="TAG_EQUIPO" msdata:ReadOnly="true" msprop:Generator_UserColumnName="TAG_EQUIPO" msprop:Generator_ColumnPropNameInRow="TAG_EQUIPO" msprop:Generator_ColumnVarNameInTable="columnTAG_EQUIPO" msprop:Generator_ColumnPropNameInTable="TAG_EQUIPOColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="3" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="TRANSP_VOLT" msdata:ReadOnly="true" msprop:Generator_UserColumnName="TRANSP_VOLT" msprop:Generator_ColumnPropNameInRow="TRANSP_VOLT" msprop:Generator_ColumnVarNameInTable="columnTRANSP_VOLT" msprop:Generator_ColumnPropNameInTable="TRANSP_VOLTColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="TRANSP_TEMP" msdata:ReadOnly="true" msprop:Generator_UserColumnName="TRANSP_TEMP" msprop:Generator_ColumnPropNameInRow="TRANSP_TEMP" msprop:Generator_ColumnVarNameInTable="columnTRANSP_TEMP" msprop:Generator_ColumnPropNameInTable="TRANSP_TEMPColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="SENTIDO" msdata:ReadOnly="true" msprop:Generator_UserColumnName="SENTIDO" msprop:Generator_ColumnPropNameInRow="SENTIDO" msprop:Generator_ColumnVarNameInTable="columnSENTIDO" msprop:Generator_ColumnPropNameInTable="SENTIDOColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="TiempoCarga" msdata:ReadOnly="true" msprop:Generator_UserColumnName="TiempoCarga" msprop:Generator_ColumnPropNameInRow="TiempoCarga" msprop:Generator_ColumnVarNameInTable="columnTiempoCarga" msprop:Generator_ColumnPropNameInTable="TiempoCargaColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="TiempoDetenido" msdata:ReadOnly="true" msprop:Generator_UserColumnName="TiempoDetenido" msprop:Generator_ColumnPropNameInRow="TiempoDetenido" msprop:Generator_ColumnVarNameInTable="columnTiempoDetenido" msprop:Generator_ColumnPropNameInTable="TiempoDetenidoColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="TiempoTransito" msdata:ReadOnly="true" msprop:Generator_UserColumnName="TiempoTransito" msprop:Generator_ColumnPropNameInRow="TiempoTransito" msprop:Generator_ColumnVarNameInTable="columnTiempoTransito" msprop:Generator_ColumnPropNameInTable="TiempoTransitoColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="Estado" msdata:ReadOnly="true" msprop:Generator_UserColumnName="Estado" msprop:Generator_ColumnPropNameInRow="Estado" msprop:Generator_ColumnVarNameInTable="columnEstado" msprop:Generator_ColumnPropNameInTable="EstadoColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="8" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="VelocidadMaxima" msdata:ReadOnly="true" msprop:Generator_UserColumnName="VelocidadMaxima" msprop:Generator_ColumnPropNameInRow="VelocidadMaxima" msprop:Generator_ColumnVarNameInTable="columnVelocidadMaxima" msprop:Generator_ColumnPropNameInTable="VelocidadMaximaColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="VelocidadPromedio" msdata:ReadOnly="true" msprop:Generator_UserColumnName="VelocidadPromedio" msprop:Generator_ColumnPropNameInRow="VelocidadPromedio" msprop:Generator_ColumnVarNameInTable="columnVelocidadPromedio" msprop:Generator_ColumnPropNameInTable="VelocidadPromedioColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="ReferenciaSalida" msdata:ReadOnly="true" msprop:Generator_UserColumnName="ReferenciaSalida" msprop:Generator_ColumnPropNameInRow="ReferenciaSalida" msprop:Generator_ColumnVarNameInTable="columnReferenciaSalida" msprop:Generator_ColumnPropNameInTable="ReferenciaSalidaColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="3" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ReferenciaCaminos" msdata:ReadOnly="true" msprop:Generator_UserColumnName="ReferenciaCaminos" msprop:Generator_ColumnPropNameInRow="ReferenciaCaminos" msprop:Generator_ColumnVarNameInTable="columnReferenciaCaminos" msprop:Generator_ColumnPropNameInTable="ReferenciaCaminosColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="3" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ReferenciaLlegada" msdata:ReadOnly="true" msprop:Generator_UserColumnName="ReferenciaLlegada" msprop:Generator_ColumnPropNameInRow="ReferenciaLlegada" msprop:Generator_ColumnVarNameInTable="columnReferenciaLlegada" msprop:Generator_ColumnPropNameInTable="ReferenciaLlegadaColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="3" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

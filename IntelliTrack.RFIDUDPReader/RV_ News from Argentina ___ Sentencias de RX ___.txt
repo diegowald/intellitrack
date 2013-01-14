@@ -1,0 +1,47 @@
+Diego, esto es lo que me mandaron, fijate que no puse los datos de lat long
+de argentina (reemplazo)..para que guarde concordancia son el checksum final
+de cada linea. 
+
+ 
+
+Chill out!, Charlie
+
+ 
+
+  _____  
+
+De: Larry Topp [mailto:lt@raveontech.com] 
+Enviado el: Jueves, 28 de Agosto de 2008 15:21
+Para: Carlos Conghos; conghos@hotmail.com
+CC: sales@raveontech.com
+Asunto: FW: News from Argentina
+
+ 
+
+Hi Carlos, thanks for the message and the update on your progress.  I hope
+the RFID piece comes together for you.
+
+Yes the price of $475 is good for you, providing you send in the completed
+dealer agreement.  We want you to be our dealer and are looking forward to
+business with you that is good for both parties.
+
+Our lead time on the GX modems is getting better and we would hope to send
+them out fairly soon after we get your order.  We can discuss payments and I
+wait for your call and try to answer your questions.
+
+See attached a few examples of the $PRAVE sentence.   If your programmers
+have some problems John Sonnenberg here can help.  The technical manual has
+details on the sentence format, see section 16.4
+
+http://www.raveontech.com/Manuals/RV-M7-GX_Tech_Manual.pdf
+
+Thanks and may you have great fortune! – Larry.
+
+
+
+__________ Información de ESET Smart Security, versión de la base de firmas
+de virus 3397 (20080828) __________
+
+ESET Smart Security ha comprobado este mensaje.
+http://www.eset.com
+

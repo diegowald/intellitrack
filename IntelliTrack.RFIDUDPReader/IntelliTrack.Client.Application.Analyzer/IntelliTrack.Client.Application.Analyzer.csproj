@@ -1,0 +1,466 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{3CE27526-0383-4592-BF51-C44F5C50B4EE}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>IntelliTrack.Client.Application</RootNamespace>
+    <AssemblyName>IntelliTrack.Analyzer</AssemblyName>
+    <StartupObject>IntelliTrack.Client.Application.Program</StartupObject>
+    <ApplicationIcon>IntelliTrack.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ActiveReports.Viewer3, Version=5.3.1436.2, Culture=neutral, PublicKeyToken=cc4967777c49a3ff, processorArchitecture=MSIL" />
+    <Reference Include="ActiveReports3, Version=5.3.1436.2, Culture=neutral, PublicKeyToken=cc4967777c49a3ff, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Checker.cs" />
+    <Compile Include="Common\Queries.cs" />
+    <Compile Include="Dataset\DataRetriever.cs" />
+    <Compile Include="Dataset\ReporteRegadoresDataset.cs" />
+    <Compile Include="DDMMdotMMMM.cs" />
+    <Compile Include="dlgParametrosConsultaHistoricos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="dlgParametrosConsultaHistoricos.Designer.cs">
+      <DependentUpon>dlgParametrosConsultaHistoricos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ElementInformation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ElementInformation.Designer.cs">
+      <DependentUpon>ElementInformation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Eventos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Eventos.Designer.cs">
+      <DependentUpon>Eventos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="dlgLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="dlgLogin.Designer.cs">
+      <DependentUpon>dlgLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmBaseDockingForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBaseDockingForm.Designer.cs">
+      <DependentUpon>frmBaseDockingForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmRawData.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRawData.Designer.cs">
+      <DependentUpon>frmRawData.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HTMLFormatting\HtmlStyle.cs" />
+    <Compile Include="Imaging\ComplexMap.cs" />
+    <Compile Include="Logging.cs" />
+    <Compile Include="MapForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MapForm.Designer.cs">
+      <DependentUpon>MapForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MemoryDataProvider.cs" />
+    <Compile Include="Menues\MenuItem.cs" />
+    <Compile Include="OverviewMap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OverviewMap.Designer.cs">
+      <DependentUpon>OverviewMap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="dlgParametrosConsultaHistoricos.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>dlgParametrosConsultaHistoricos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ElementInformation.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ElementInformation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Eventos.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Eventos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dlgLogin.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>dlgLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRawData.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmRawData.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MapForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>MapForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OverviewMap.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>OverviewMap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\Regadores.es-AR.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Regadores.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\Regadores.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Regadores.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\Regadores.sl-SI.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Regadores.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\Reporte1.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Reporte1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ReportForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WaitDialog.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>WaitDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Content Include="data\Mapas\caminos.dbf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="data\Mapas\caminos.shp">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="data\Mapas\caminos.shx">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="data\Mapas\canales.dbf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="data\Mapas\canales.shp">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="data\Mapas\canales.shx">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="data\Mapas\drenajes.dbf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="data\Mapas\drenajes.shp">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="data\Mapas\drenajes.shx">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="data\Mapas\jujuy.dbf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="data\Mapas\jujuy.shp">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="data\Mapas\jujuy.shx">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="data\Mapas\referencias.dbf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="data\Mapas\referencias.sbn">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="data\Mapas\referencias.sbx">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="data\Mapas\referencias.shp">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="data\Mapas\referencias.shx">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="data\Mapas\rios.dbf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="data\Mapas\rios.shp">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="data\Mapas\rios.shx">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="data\Mapas\salta.dbf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="data\Mapas\salta.shp">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="data\Mapas\salta.shx">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="ReferencePoint.cs" />
+    <Compile Include="Reportes\Regadores.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reportes\Regadores.Designer.cs">
+      <DependentUpon>Regadores.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\Reporte1.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reportes\Reporte1.Designer.cs">
+      <DependentUpon>Reporte1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReportForm.Designer.cs">
+      <DependentUpon>ReportForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SIGDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SIGDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="UDP\DataParser.cs" />
+    <Compile Include="UDP\UDPHandler.cs" />
+    <Compile Include="UTCTime.cs" />
+    <Compile Include="ValidacionSeguridad.cs" />
+    <Compile Include="WaitDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WaitDialog.Designer.cs">
+      <DependentUpon>WaitDialog.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\IntelliTrack.Service.Common\IntelliTrack.Service.Common.csproj">
+      <Project>{BE5B1612-7928-4937-8EF2-6D5FC13AF758}</Project>
+      <Name>IntelliTrack.Service.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\IntelliTrack.UDP\IntelliTrack.UDP.csproj">
+      <Project>{12B97738-16F1-4280-9FE0-1407FE884FCB}</Project>
+      <Name>IntelliTrack.UDP</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\log4net-1.2.10\src\log4net.csproj">
+      <Project>{F6A02431-167E-4347-BC43-65532C31CDB7}</Project>
+      <Name>log4net</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SharpMap\SharpMap.csproj">
+      <Project>{C83777FC-AABB-47D9-911F-D76255D4D541}</Project>
+      <Name>SharpMap</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SplashScreen\SplashScreen.csproj">
+      <Project>{743EDB81-D2AC-4A52-A313-50BD4229401B}</Project>
+      <Name>SplashScreen</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\System.Drawing.Html\System.Drawing.Html.csproj">
+      <Project>{1B058920-24B4-4140-8AE7-C8C6C38CA52D}</Project>
+      <Name>System.Drawing.Html</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WinFormsUI\WinFormsUI.csproj">
+      <Project>{C75532C4-765B-418E-B09B-46D36B2ABDB1}</Project>
+      <Name>WinFormsUI</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="boxsel.cur">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="data\Mapas\Mapas Leame.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="data\symbols\BanderaAmarilla.ico">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="data\symbols\BanderaAzul.ico">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="data\symbols\BanderaNaranja.ico">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="data\symbols\BanderaPurpura.ico">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="data\symbols\BanderaRoja.ico">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="data\symbols\BanderaVerde.ico">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="data\symbols\CamionGold.ico">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="data\symbols\CamionGoldE.ico">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="data\symbols\CamionGoldN.ico">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="data\symbols\CamionGoldNE.ico">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="data\symbols\CamionGoldNO.ico">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="data\symbols\CamionGoldO.ico">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="data\symbols\CamionGoldS.ico">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="data\symbols\CamionGoldSE.ico">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="data\symbols\CamionGoldSO.ico">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="data\symbols\CamionRojo.ico">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="data\symbols\CamionRojoE.ico">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="data\symbols\CamionRojoN.ico">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="data\symbols\CamionRojoNE.ico">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="data\symbols\CamionRojoNO.ico">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="data\symbols\CamionRojoO.ico">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="data\symbols\CamionRojoS.ico">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="data\symbols\CamionRojoSE.ico">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="data\symbols\CamionRojoSO.ico">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="data\symbols\Cañeros_D.ico" />
+    <Content Include="data\symbols\Cañeros_E.ico" />
+    <Content Include="data\symbols\Cañeros_N.ico" />
+    <Content Include="data\symbols\Cañeros_NE.ico" />
+    <Content Include="data\symbols\Cañeros_NO.ico" />
+    <Content Include="data\symbols\Cañeros_O.ico" />
+    <Content Include="data\symbols\Cañeros_S.ico" />
+    <Content Include="data\symbols\Cañeros_SE.ico" />
+    <Content Include="data\symbols\Cañeros_SO.ico" />
+    <Content Include="data\symbols\Frente.ico">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="data\symbols\Regadores_D.ico" />
+    <Content Include="data\symbols\Regadores_E.ico" />
+    <Content Include="data\symbols\Regadores_N.ico" />
+    <Content Include="data\symbols\Regadores_NE.ico" />
+    <Content Include="data\symbols\Regadores_NO.ico" />
+    <Content Include="data\symbols\Regadores_O.ico" />
+    <Content Include="data\symbols\Regadores_S.ico" />
+    <Content Include="data\symbols\Regadores_SE.ico" />
+    <Content Include="data\symbols\Regadores_SO.ico" />
+    <Content Include="data\symbols\Tractor_D.ico" />
+    <Content Include="data\symbols\Tractor_E.ico" />
+    <Content Include="data\symbols\Tractor_N.ico" />
+    <Content Include="data\symbols\Tractor_NE.ico" />
+    <Content Include="data\symbols\Tractor_NO.ico" />
+    <Content Include="data\symbols\Tractor_O.ico" />
+    <Content Include="data\symbols\Tractor_S.ico" />
+    <Content Include="data\symbols\Tractor_SE.ico" />
+    <Content Include="data\symbols\Tractor_SO.ico" />
+    <Content Include="dock.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="IntelliTrack.ico" />
+    <Content Include="pan.cur">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Reportes\Resources\about.ico" />
+    <Content Include="Logo.JPG" />
+    <None Include="App.config">
+    </None>
+    <None Include="ClassDiagram1.cd" />
+    <None Include="SIGDataSet.xsc">
+      <DependentUpon>SIGDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="SIGDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SIGDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="SIGDataSet.xss">
+      <DependentUpon>SIGDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="UML Transponders.cd" />
+    <None Include="Reportes\Resources\AlignTableCellMiddleLeftJustHS.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

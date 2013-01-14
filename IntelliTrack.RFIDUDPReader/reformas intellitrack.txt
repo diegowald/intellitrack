@@ -1,0 +1,33 @@
+Lin 1121, 1162, 1203, 1244, 1285  "Temnperatura" por "Temperatura"
+Lin 353, 401 MemoryDataProvider.cs  "Temnperatura" por "Temperatura"
+
+dbo.CATEGORIAS "Transporte Caña" por "Cañeros"
+Lin 390 ComplexMap.cs "Transporte Caña" por "Cañeros"
+
+Lin 1070 ComplexMap.cs "string s = "Transporte de caña\n\rDesignacion: " + fdr["ID"];" por "string s = "Cañero " + fdr["ID"];"
+
+Lin 71 Eventos.designer.cs
+//this.Name = "Eventos";
+//this.TabText = "Eventos";
+//this.Text = "Eventos";
+this.Name = "Terminal";
+this.TabText = "Terminal";
+this.Text = "Terminal";
+
+Lin 6 dock.xml
+    <Content ID="0" PersistString="IntelliTrack.Client.Application.ElementInformation,Información GPS"... 
+por
+    <Content ID="0" PersistString="IntelliTrack.Client.Application.ElementInformation,Eventos"... 
+
+Lin 42 Form1.cs
+      RealtimeInfo.Text = "INFORMACION GPS";
+      RealtimeInfo.Name = "Información GPS";
+      RealtimeInfo.TabText = "Información GPS";
+      RealtimeInfo.Text = "Información GPS";
+por
+      RealtimeInfo.Text = "EVENTOS";
+      RealtimeInfo.Name = "Eventos";
+      RealtimeInfo.TabText = "Eventos";
+      RealtimeInfo.Text = "Eventos";
+
+

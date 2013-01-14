@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Font Name="Tahoma" Size="8.25" />
+  <Class Name="IntelliTrack.Data.CosechadorasDataPoint">
+    <Position X="2" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>MemoryDataProvider.cs</FileName>
+      <HashCode>AACAAAAAgAAAAQEAAAAAgAAQAAAAAAAAAABAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="IntelliTrack.Data.DataPoint">
+    <Position X="6.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>MemoryDataProvider.cs</FileName>
+      <HashCode>AgCQKAAGgQFAgaEIhAAAjAARAIIAEBQAAABAAKgEAAI=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="IntelliTrack.Data.FrenteDataPoint">
+    <Position X="11" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>MemoryDataProvider.cs</FileName>
+      <HashCode>AACACAAEiAAAAQEEgAAAgAARAAAAAIAAAABAAAgAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="IntelliTrack.Data.RegadorDataPoint">
+    <Position X="6.5" Y="14.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>MemoryDataProvider.cs</FileName>
+      <HashCode>AACAAAAEgAAAAQEEgAAAgAAQAAAAAIAAAABAAAgAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="IntelliTrack.Data.TractoresDataPoint">
+    <Position X="7.75" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>MemoryDataProvider.cs</FileName>
+      <HashCode>hACAGAAEgAAAASEAACAAgAAQAAAAAAAgQABACQgAAAQ=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="IntelliTrack.Data.TransporteDataPoint">
+    <Position X="8.75" Y="14.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>MemoryDataProvider.cs</FileName>
+      <HashCode>AICACCAEgAAACSEEgAAAgAASAAAAAIEQAABAAAgAgAE=</HashCode>
+    </TypeIdentifier>
+    <NestedTypes>
+      <Delegate Name="IntelliTrack.Data.TransporteDataPoint.EntradaAFrente" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>MemoryDataProvider.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Delegate>
+      <Delegate Name="IntelliTrack.Data.TransporteDataPoint.SalidaDeFrente" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>MemoryDataProvider.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Delegate>
+    </NestedTypes>
+  </Class>
+  <Class Name="IntelliTrack.Data.UniversalDataPoint">
+    <Position X="4.25" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>MemoryDataProvider.cs</FileName>
+      <HashCode>AACAAAAAgAAAAQEAAAAAgAAQAAAAAAAAAABAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+</ClassDiagram>

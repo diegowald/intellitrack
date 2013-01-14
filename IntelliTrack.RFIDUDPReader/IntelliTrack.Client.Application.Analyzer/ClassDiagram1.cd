@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Font Name="Tahoma" Size="8.25" />
+  <Class Name="IntelliTrack.Client.Application.ElementInformation" Collapsed="true">
+    <Position X="2.75" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>ElementInformation.cs</FileName>
+      <HashCode>AAAAgAABACAAAAAAAACAAAASAAAACAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="IntelliTrack.Client.Application.Program" Collapsed="true">
+    <Position X="12" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Program.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="IntelliTrack.Client.Application.Eventos" Collapsed="true">
+    <Position X="7.25" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Eventos.cs</FileName>
+      <HashCode>AAAAAAAAACAAAAAAAACAAAASAAgACAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="IntelliTrack.Client.Application.Form1" Collapsed="true">
+    <Position X="13.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Form1.cs</FileName>
+      <HashCode>AAAAAAAAAKgAAQAAAACAAAACAABAAAIEAAAAEAAIAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="IntelliTrack.Client.Application.frmBaseDockingForm" Collapsed="true">
+    <Position X="6" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>frmBaseDockingForm.cs</FileName>
+      <HashCode>AAAAAAAAACAAAAAAAACAAAACAAAACAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="IntelliTrack.Client.Application.MapForm" Collapsed="true">
+    <Position X="9.5" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>MapForm.cs</FileName>
+      <HashCode>AQAAAA8gSCAABwRAAFqEAAAeAAAACgCEBAEBAEEAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="IntelliTrack.Client.Application.OverviewMap" Collapsed="true">
+    <Position X="5" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>OverviewMap.cs</FileName>
+      <HashCode>AAAAAAAAACAAAAAAAACAAAASAAAACgAAAAEAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="IntelliTrack.Client.Application.Imaging.ComplexMap" Collapsed="true">
+    <Position X="12" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Imaging\ComplexMap.cs</FileName>
+      <HashCode>EhABUkAAABBQBkBMASQlAJIAAoABEgQIMoIAAARpJAI=</HashCode>
+    </TypeIdentifier>
+  </Class>
+</ClassDiagram>

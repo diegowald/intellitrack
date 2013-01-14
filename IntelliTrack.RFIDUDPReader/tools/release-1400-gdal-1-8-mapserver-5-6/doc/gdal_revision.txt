@@ -1,0 +1,5 @@
+Restored 'swig\ruby\gdal_wrap.cpp'
+Restored 'swig\ruby\ogr_wrap.cpp'
+Restored 'swig\ruby\gdalconst_wrap.c'
+Restored 'swig\ruby\osr_wrap.cpp'
+At revision 22085.
